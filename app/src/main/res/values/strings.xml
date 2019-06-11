@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GoodDog</string>
+    <string name="photo_display_desc">Photo Result Display</string>
+    <string name="find_good_dog">find good dog</string>
 </resources>
