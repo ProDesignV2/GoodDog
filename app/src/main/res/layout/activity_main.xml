@@ -7,34 +7,17 @@
     android:background="#FDFDFE"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:gravity="top"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:contentDescription="@string/photo_display_desc"
+        android:src="@drawable/corgi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <View
-            android:id="@+id/dudLeft"
-            android:layout_width="32dp"
-            android:layout_height="match_parent"></View>
-
-        <pl.droidsonroids.gif.GifImageView
-            android:id="@+id/imageView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:contentDescription="@string/photo_display_desc"
-            android:src="@drawable/corgi" />
-
-        <View
-            android:id="@+id/dudRight"
-            android:layout_width="32dp"
-            android:layout_height="match_parent"></View>
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
@@ -56,4 +39,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/pulseView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:contentDescription="@string/loading_dog"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog_face" />
 </android.support.constraint.ConstraintLayout>
