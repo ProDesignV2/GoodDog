@@ -7,12 +7,28 @@
     android:background="#FDFDFE"
     tools:context=".MainActivity">
 
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/imageView"
-        android:layout_width="0dp"
+    <TextView
+        android:id="@+id/resultsView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:contentDescription="@string/photo_display_desc"
+        android:background="#BF008477"
+        android:fontFamily="@font/bubblegum_sans"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/not_dog"
+        android:textColor="#BFFFFFFF"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/corgiView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="64dp"
+        android:contentDescription="@string/corgi_view_description"
         android:src="@drawable/corgi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,4 +67,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dog_face" />
+
+    <ImageView
+        android:id="@+id/photoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/photo_display_desc"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorAccent" />
+
 </android.support.constraint.ConstraintLayout>

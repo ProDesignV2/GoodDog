@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">GoodDog</string>
     <string name="photo_display_desc">Photo Result Display</string>
-    <string name="find_good_dog">find good dog</string>
+    <string name="corgi_view_description">Corgi Display</string>
+    <string name="find_good_dog">find good %s</string>
     <string name="loading_dog">Loading Dog</string>
+    <string name="is_good_dog">That is a good %s!</string>
+    <string name="not_dog">That is not a %s, but if it was it would probably be a good %s!</string>
 </resources>
